@@ -372,7 +372,6 @@ class TestmainFragment : Fragment() {
     }
 
     fun startTest() {
-        mFirebaseAnalytics.logEvent("TEST_STARTED",null)
         mViewModel.startPing("www.google.com")
         val downloaddataset = binding.linechartStrength
             .data.getDataSetByIndex(1) as LineDataSet
